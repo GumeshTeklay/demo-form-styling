@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo - Styling Forms</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="inner-container">
+            <img src="img/logo.jpg" alt="Logo">
+            <h1 class="sr-only">Company Name</h1>
+            <form action="#" mothod="GET" role="search">
+                <label class="sr-only" for="search">Search</label>
+                <input id="search" type="text" placeholder="Search">
+            </form>  
+        </div>
+    </header>
+    <section>
+            <div class="inner-container">
+            <h2>Log In</h2>
+            <form action="#" mothod="POST" name="login">
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" required>
+                </div>
+                <div>
+                    <label for="pw">Password</label>
+                    <p>Much be 8 characters, and on uppercase, one lowercase, and one number</p>
+                    <input id="pw" type="Password" required minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" autocomplete="off">
+                </div>
+                <div>
+                    <input id="submit" type="submit" value="sing up">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

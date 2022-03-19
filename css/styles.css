@@ -1,1 +1,86 @@
 /* developer styles go here */
+/* CSS */
+
+:root{
+    --cream: #e5e1db;
+    --yellow: #cfb450;
+    --grey: #6b6267;
+    --lt-grey: #d2cfd1;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: var(--cream);
+    margin-bottom: 3rem;
+}
+
+.inner-container{
+    padding: 0 1rem;
+    max-width: 59.375rem;
+}
+
+header > .inner-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input[id=search]{
+    padding: 0.5rem;
+    padding-left: 2.25rem;
+    border-radius: 5px;
+    border: 1px solid var(--lt-grey);
+    background-image: url(../img/magnifying-glass.svg);
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center left 8px;
+}
+
+form[name=login]{
+    border: 1px solid var(--lt-grey);
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px var(--lt-grey);
+    padding: 1.5rem;
+}
+
+label{
+    display: block;
+}
+form > div{
+    margin-bottom: 1rem;
+}
+
+input[id=email],
+input[id=pw]{
+    padding: 0 0.5rem;
+    line-height: 1.875rem;
+    width: 14.375rem;
+    border: none;
+    border-bottom: 1px solid var(--lt-grey);
+}
+
+input[id=submit]{
+    background-color: var(--yellow);
+    padding: 0.25rem 0.5rem;
+    border: 2px solid var(--yellow);
+    border-radius: 5px;
+}
+
+input[id=submit]:hover{
+    background-color: #fff;
+    color: var(--lt-grey);
+    cursor: pointer;
+}
+
+input[id=email]:invalid,
+input[id=pw]:invalid{
+    outline: 2px solid tomato;
+}
+
+input[id=email]:valid,
+input[id=pw]:valid{
+    outline: 2px solid green;
+}
